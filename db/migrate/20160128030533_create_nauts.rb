@@ -3,6 +3,7 @@ class CreateNauts < ActiveRecord::Migration
     create_table :nauts do |t|
       t.string :first_name
       t.string :last_name
+      t.string :country
       t.date :selection_year
       t.timestamps null: false
     end
