@@ -1,4 +1,10 @@
 $(document).ready(function() {
-  $.get('nauts');
-  // See: http://docs.jquery.com/Tutorials:Introducing_$(document).ready()
+
+  (function() {
+    var getNauts = function(data) {
+      console.log(data);
+    };
+
+    $.getJSON('/nauts', getNauts);
+  })();
 });

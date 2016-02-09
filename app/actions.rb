@@ -4,5 +4,5 @@ get '/' do
 end
 
 get '/nauts/?' do
-  @nauts = Naut.all
+  Naut.all.to_json
 end
