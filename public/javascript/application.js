@@ -2,21 +2,21 @@
 
 $(document).ready(function() {
 
-  (function() {
-    var getNauts = function(nauts) {
-      console.log(nauts);
-    };
+  var getNauts = function(nauts) {
+    console.log(nauts);
+  };
 
-    $.getJSON('/nauts', getNauts);
-  })();
+  var selected = function(naut) {
+    $('#name').text(naut.first_name + " " + naut.last_name);
+    $('#country').text(naut.country);
+    $('#selection-year').text(naut.selection_year);
+  };
 
-  (function() {
-    var selected = function(naut) {
-      $('#name').text(naut.first_name + " " + naut.last_name)
-    };
 
-    $.getJSON('/selected_naut', selected);
-  })();
+  $.getJSON('/nauts', getNauts);
+
+  $.getJSON('/selected_naut', selected);
+
 
 
 });
