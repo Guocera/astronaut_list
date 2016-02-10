@@ -18,28 +18,25 @@ task "db:populate" do
     last_name: "Wilmore",
     country: "USA",
     selection_year: 2000,
-    image: '/uploads/naut/image/1/wilmore.png'
   )
+  b_wilmore
   t_kopra = Naut.find_or_create_by(
     first_name: "Timothy",
     last_name: "Kopra",
     country: "USA",
     selection_year: 2000,
-    image: '/uploads/naut/image/2/kopra.png'
   )
   m_barratt = Naut.find_or_create_by(
     first_name: "Michael",
     last_name: "Barratt",
     country: "USA",
     selection_year: 2000,
-    image: '/uploads/naut/image/3/barratt.png'
   )
   s_kelly = Naut.find_or_create_by(
     first_name: "Scott",
     last_name: "Kelly",
     country: "USA",
     selection_year: 1996,
-    image: '/uploads/naut/image/4/kelly.png'
   )
 
   b_wilmore.degrees.find_or_create_by(
