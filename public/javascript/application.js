@@ -5,6 +5,9 @@ $(document).ready(function() {
   var getNauts = function(nauts) {
     $('#nauts-list').append($("<div></div>")
       .addClass("col-sm-3 col-xs-6")
+      .append($("<a></a>")
+        .attr({ href: "#"})
+      )
     )
   };
 
