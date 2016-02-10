@@ -6,9 +6,14 @@ $(document).ready(function() {
     $('#nauts-list').append($("<div></div>")
       .addClass("col-sm-3 col-xs-6")
       .append($("<a></a>")
-        .attr({ href: "#"})
+        .attr({ href: "#" })
+        .append($("<img></img>")
+          .addClass("img-responsive portfolio-item")
+          .attr({ src: "http://placehold.it/500x300" })
+          .attr({ alt: "" })
+        )
       )
-    )
+    );
   };
 
   var selected = function(naut) {
