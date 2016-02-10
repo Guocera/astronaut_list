@@ -3,7 +3,9 @@
 $(document).ready(function() {
 
   var getNauts = function(nauts) {
-    console.log(nauts);
+    $('#nauts-list').append($("<div></div>")
+      .addClass("col-sm-3 col-xs-6")
+    )
   };
 
   var selected = function(naut) {
@@ -16,6 +18,8 @@ $(document).ready(function() {
   $.getJSON('/nauts', getNauts);
 
   $.getJSON('/selected_naut', selected);
+// $(this).attr("src", urlAbsolute)
+
 
 
 

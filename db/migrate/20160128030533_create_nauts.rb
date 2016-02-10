@@ -5,6 +5,8 @@ class CreateNauts < ActiveRecord::Migration
       t.string :last_name
       t.string :country
       t.date :selection_year
+      t.string :image
+
       t.timestamps null: false
     end
   end

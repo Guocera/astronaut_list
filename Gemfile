@@ -11,6 +11,9 @@ gem 'sinatra-activerecord'
 gem 'puma'
 gem 'tux'
 
+gem 'carrierwave'
+gem 'mini_magick'
+
 gem 'json'
 
 group :development, :test do
